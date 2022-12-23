@@ -1,0 +1,83 @@
+@use "../../sassVars" as *;
+
+.whatGPT {
+  padding: var(--main-padding);
+  position: relative;
+  z-index: 5;
+  .container {
+    position: relative;
+    padding: 80px;
+    background-color: var(--text-bg);
+    overflow: hidden;
+    .row {
+      position: relative;
+      z-index: 10;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      top: -250px;
+      left: -250px;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      background-color: #0f4279;
+      filter: blur(100px);
+      -webkit-filter: blur(100px);
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -250px;
+      right: -250px;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      background-color: #1b78de;
+      filter: blur(100px);
+      -webkit-filter: blur(100px);
+    }
+    .main-title {
+      color: white;
+      padding: 15px;
+      font-weight: bold;
+      position: relative;
+      &::before {
+        content: "";
+        @include pesudo-gradient;
+      }
+    }
+    .main-desc {
+      color: var(--text-blue);
+      padding-top: 15px;
+    }
+
+    .row2 {
+      margin: 70px 0;
+      .possiblities-intro {
+        font-weight: bold;
+        @include text-gradient;
+      }
+      p {
+        color: var(--sec-orange);
+        text-align: end;
+        font-weight: lighter;
+        @media (max-width: 768px) {
+          text-align: center;
+          margin-top: 30px;
+        }
+      }
+    }
+    .what-gpt {
+      flex-direction: column;
+    }
+  }
+}

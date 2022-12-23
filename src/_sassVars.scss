@@ -1,0 +1,24 @@
+@mixin main-blur {
+  background-color: #002853;
+  filter: blur(1000px);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-filter: blur(280px);
+}
+
+@mixin text-gradient {
+  background: var(--main-gradient);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin pesudo-gradient {
+  position: absolute;
+  top: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--main-gradient);
+}

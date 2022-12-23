@@ -1,0 +1,124 @@
+@use "../../sassVars" as *;
+
+.features2 {
+  padding: var(--main-padding);
+  .art {
+    position: relative;
+    img {
+      filter: grayscale(90%);
+      -webkit-filter: grayscale(90%);
+      z-index: 2;
+      width: 100%;
+      position: relative;
+    }
+    .rectangle {
+      bottom: 0;
+      position: absolute;
+      width: 72%;
+      height: 65%;
+      border-top-right-radius: 120px;
+      background-color: var(--text-bg);
+      mix-blend-mode: difference;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 18px;
+      background-image: url("../../assets/Ellipses.png");
+      background-size: cover;
+      width: 50%;
+      height: 50%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .floats {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      .chat {
+        position: absolute;
+        top: 15%;
+        left: 17%;
+        color: white;
+        font-size: 2.5em;
+        background-color: var(--text-bg);
+        padding: 5px 15px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        @media (max-width: 768px) {
+          font-size: 1.5em;
+          left: 10%;
+        }
+      }
+      .more {
+        position: absolute;
+        color: white;
+        background-color: var(--sec-orange);
+        display: flex;
+        font-size: 1em;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        padding: 10px 15px;
+        align-items: center;
+        right: 10%;
+        top: 25%;
+        p {
+          margin: 0 0 0 10px;
+          @media (max-width: 768px) {
+            margin-right: 5px;
+          }
+        }
+        @media (max-width: 768px) {
+          padding: 5px 10px;
+          right: 3%;
+          top: 23%;
+          font-size: 12px;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+        }
+      }
+    }
+  }
+  .desc {
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    p:first-of-type {
+      color: #71e5ff;
+    }
+    .title {
+      @include text-gradient;
+      font-weight: bold;
+      margin-bottom: 20px;
+      padding: 5px 0;
+    }
+    .desc-body {
+      color: var(--text-blue);
+      font-weight: lighter;
+      font-size: 20px;
+    }
+    p:last-of-type {
+      color: var(--sec-orange);
+    }
+  }
+  @media (max-width: 768px) {
+    padding-top: 0;
+  }
+}

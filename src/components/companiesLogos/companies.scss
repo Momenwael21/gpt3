@@ -1,0 +1,14 @@
+.companies {
+  z-index: 5;
+  position: relative;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    img {
+      margin: 30px;
+      height: 27px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@use "../../sassVars" as *;
+
+.article {
+  display: flex;
+  margin: 20px;
+  .article-title {
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      @include pesudo-gradient;
+    }
+  }
+  .article-body {
+    color: var(--text-blue);
+    padding: 15px;
+    margin-top: 20px;
+  }
+}

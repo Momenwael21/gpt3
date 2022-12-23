@@ -1,0 +1,80 @@
+.navbar {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  &.active {
+    background-color: var(--main-bg) !important;
+  }
+
+  a {
+    color: white !important;
+  }
+
+  .navbar-brand {
+    margin-right: 10px;
+    .navbar-toggler {
+      outline: none !important;
+      border: none !important;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+  .nav-item {
+    margin: 10px;
+    .nav-link {
+      padding: 10px 20px;
+      transition: all 0.2s ease-in;
+      -webkit-transition: all 0.2s ease-in;
+      -moz-transition: all 0.2s ease-in;
+      -ms-transition: all 0.2s ease-in;
+      -o-transition: all 0.2s ease-in;
+      border-radius: 30px;
+      -webkit-border-radius: 30px;
+      -moz-border-radius: 30px;
+      -ms-border-radius: 30px;
+      -o-border-radius: 30px;
+
+      &:hover,
+      &.active {
+        background-color: var(--main-orange);
+      }
+    }
+  }
+
+  .sign-btns {
+    button {
+      color: white;
+      padding: 10px 15px;
+      font-size: 14px;
+      font-weight: 300;
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      &:hover {
+        color: var(--main-orange);
+      }
+    }
+    .sign-up {
+      background-color: var(--main-orange) !important;
+      border: 1px solid var(--main-orange);
+      &:hover {
+        background-color: transparent !important;
+        color: var(--main-orange);
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    background-color: transparent !important ;
+  }
+  @media (max-width: 768px) {
+    background-color: var(--main-bg) !important;
+  }
+}

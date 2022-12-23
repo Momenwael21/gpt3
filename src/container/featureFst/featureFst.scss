@@ -1,0 +1,53 @@
+@use "../../sassVars" as *;
+.features1 {
+  position: relative;
+  padding: var(--main-padding);
+  &::before {
+    content: "";
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    top: 0;
+    left: -350px;
+    @include main-blur;
+    @media (max-width: 768px) {
+      top: 50%;
+      transform: translateY(-50%);
+      width: 400px;
+      left: -200px;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+    }
+  }
+  .container {
+    position: relative;
+    z-index: 5;
+    .title {
+      font-weight: bold;
+      @include text-gradient;
+      margin-bottom: 40px;
+    }
+    .desc {
+      color: var(--sec-orange);
+      margin-bottom: 40px;
+    }
+    .feat1 {
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+      @media (min-width: 768px) {
+        .article-title {
+          margin-right: 30px;
+          h5 {
+            width: 150px;
+          }
+        }
+        .article-body {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
