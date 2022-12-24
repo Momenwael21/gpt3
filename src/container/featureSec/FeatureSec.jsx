@@ -6,7 +6,7 @@ import "./featureSec.css";
 
 const FeatureSec = () => {
   return (
-    <div className="features2">
+    <div id="openAI" className="features2">
       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-lg-6">

@@ -4,7 +4,7 @@ import { Articles } from "../../components/index";
 
 const WhatIsGPT = () => {
   return (
-    <div className="whatGPT">
+    <div id="whatGPT" className="whatGPT">
       <div className="container">
         <div className="sec-body">
           <div className="row">

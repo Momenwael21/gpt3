@@ -1,5 +1,5 @@
 import React from "react";
-import illustraion from "../../assets/Header_Illustration.png";
+import illustraion from "../../assets/Header_Illustration.webp";
 import user1 from "../../assets/Ellipse 31.png";
 import user2 from "../../assets/Ellipse 32.png";
 import user3 from "../../assets/Ellipse 33.png";

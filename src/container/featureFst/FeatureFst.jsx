@@ -4,7 +4,7 @@ import "./featureFst.css";
 
 const FeatureFst = () => {
   return (
-    <div className="features1">
+    <div id="case-Studies" className="features1">
       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-4">

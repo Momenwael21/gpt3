@@ -16,14 +16,16 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Header />
-      <Companies />
-      <WhatIsGPT />
-      <FeatureFst />
-      <FeatureSec />
-      <CTA />
-      <Blog />
-      <Footer />
+      <div className="secondary-app">
+        <Header />
+        <Companies />
+        <WhatIsGPT />
+        <FeatureFst />
+        <FeatureSec />
+        <CTA />
+        <Blog />
+        <Footer />
+      </div>
     </div>
   );
 }

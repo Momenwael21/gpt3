@@ -21,6 +21,13 @@ header::before {
   -o-border-radius: 50%;
   -webkit-filter: blur(280px);
 }
+@media (max-width: 991px) {
+  header::before {
+    width: 600px;
+    height: 900px;
+    top: 0;
+  }
+}
 header::after {
   content: "";
   z-index: -1;
@@ -37,6 +44,12 @@ header::after {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   -webkit-filter: blur(280px);
+}
+@media (max-width: 768px) {
+  header::after {
+    width: 0;
+    height: 0;
+  }
 }
 header .home-desc {
   padding-top: 80px;

@@ -1,4 +1,12 @@
 .App {
   background-color: var(--main-bg);
-  overflow-x: hidden;
+}
+
+.secondary-app {
+  @media (max-width: 991px) {
+    overflow-x: hidden;
+  }
+}
+.container {
+  overflow: hidden;
 }
