@@ -1,0 +1,17 @@
+@use "../../sassVars" as *;
+
+.blog {
+  padding: var(--main-padding);
+  .blog-title {
+    margin-bottom: 70px;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 3em;
+    @include text-gradient;
+    @media (max-width: 768px) {
+      font-size: 2.5em;
+      text-align: center;
+      line-height: 1.4;
+    }
+  }
+}

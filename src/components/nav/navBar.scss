@@ -2,11 +2,11 @@
   z-index: 10;
   position: sticky;
   top: 0;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   &.active {
     background-color: var(--main-bg) !important;
   }
@@ -40,9 +40,8 @@
       -ms-border-radius: 30px;
       -o-border-radius: 30px;
 
-      &:hover,
-      &.active {
-        background-color: var(--main-orange);
+      &:hover {
+        color: var(--main-orange) !important;
       }
     }
   }

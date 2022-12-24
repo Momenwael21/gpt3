@@ -3,11 +3,11 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 .navbar.active {
   background-color: var(--main-bg) !important;
@@ -41,8 +41,8 @@
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
 }
-.navbar .nav-item .nav-link:hover, .navbar .nav-item .nav-link.active {
-  background-color: var(--main-orange);
+.navbar .nav-item .nav-link:hover {
+  color: var(--main-orange) !important;
 }
 .navbar .sign-btns button {
   color: white;

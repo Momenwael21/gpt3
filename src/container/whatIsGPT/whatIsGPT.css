@@ -3,17 +3,17 @@
   position: relative;
   z-index: 5;
 }
-.whatGPT .container {
+.whatGPT .container .sec-body {
   position: relative;
   padding: 80px;
   background-color: var(--text-bg);
   overflow: hidden;
 }
-.whatGPT .container .row {
+.whatGPT .container .sec-body .row {
   position: relative;
   z-index: 10;
 }
-.whatGPT .container::before {
+.whatGPT .container .sec-body::before {
   position: absolute;
   content: "";
   top: -250px;
@@ -29,7 +29,7 @@
   filter: blur(100px);
   -webkit-filter: blur(100px);
 }
-.whatGPT .container::after {
+.whatGPT .container .sec-body::after {
   position: absolute;
   content: "";
   bottom: -250px;
@@ -45,13 +45,13 @@
   filter: blur(100px);
   -webkit-filter: blur(100px);
 }
-.whatGPT .container .main-title {
+.whatGPT .container .sec-body .main-title {
   color: white;
   padding: 15px;
   font-weight: bold;
   position: relative;
 }
-.whatGPT .container .main-title::before {
+.whatGPT .container .sec-body .main-title::before {
   content: "";
   position: absolute;
   top: 0;
@@ -59,31 +59,36 @@
   height: 3px;
   background: var(--main-gradient);
 }
-.whatGPT .container .main-desc {
+.whatGPT .container .sec-body .main-desc {
   color: var(--text-blue);
   padding-top: 15px;
 }
-.whatGPT .container .row2 {
+.whatGPT .container .sec-body .row2 {
   margin: 70px 0;
 }
-.whatGPT .container .row2 .possiblities-intro {
+.whatGPT .container .sec-body .row2 .possiblities-intro {
   font-weight: bold;
   background: var(--main-gradient);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.whatGPT .container .row2 p {
+@media (max-width: 768px) {
+  .whatGPT .container .sec-body .row2 .possiblities-intro {
+    font-size: 25px;
+  }
+}
+.whatGPT .container .sec-body .row2 p {
   color: var(--sec-orange);
   text-align: end;
   font-weight: lighter;
 }
 @media (max-width: 768px) {
-  .whatGPT .container .row2 p {
+  .whatGPT .container .sec-body .row2 p {
     text-align: center;
     margin-top: 30px;
   }
 }
-.whatGPT .container .what-gpt {
+.whatGPT .container .sec-body .what-gpt {
   flex-direction: column;
 }/*# sourceMappingURL=whatIsGPT.css.map */

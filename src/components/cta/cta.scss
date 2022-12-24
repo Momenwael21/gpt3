@@ -1,0 +1,45 @@
+.cta {
+  padding: var(--main-padding);
+  .container {
+    .subscribe {
+      background: var(--main-gradient);
+      padding: 40px;
+      border-radius: 15px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+      }
+      .desc {
+        .body {
+          font-weight: bold;
+        }
+      }
+      a {
+        padding: 15px 20px;
+        color: white;
+        background-color: black;
+        border: 2px solid black;
+        transition: 0.3s all ease-in-out;
+
+        -webkit-transition: 0.3s all ease-in-out;
+        -moz-transition: 0.3s all ease-in-out;
+        -ms-transition: 0.3s all ease-in-out;
+        -o-transition: 0.3s all ease-in-out;
+        &:hover {
+          background-color: transparent;
+          color: black;
+        }
+        @media (max-width: 768px) {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
