@@ -142,11 +142,17 @@ header {
       }
     }
   }
-  .illustraion {
-    // mix-blend-mode: overlay !important;
-    img {
-      width: 100% !important;
-      z-index: 5;
+  .row > div:nth-child(2) {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .illustraion {
+      
+      img {
+        width: 100% !important;
+        z-index: 5;
+      }
     }
   }
 }

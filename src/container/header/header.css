@@ -192,7 +192,12 @@ header .home-desc .subscribe .users .reqs-title {
     margin-top: 20px;
   }
 }
-header .illustraion img {
+header .row > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .row > div:nth-child(2) .illustraion img {
   width: 100% !important;
   z-index: 5;
 }/*# sourceMappingURL=header.css.map */
