@@ -1,10 +1,9 @@
 import React from "react";
-import "./whatIsGPT.css";
 import { Articles } from "../../components/index";
 
 const WhatIsGPT = () => {
   return (
-    <div id="whatGPT" className="whatGPT">
+    <section id="whatGPT" className="whatGPT">
       <div className="container">
         <div className="sec-body">
           <div className="row">
@@ -62,7 +61,7 @@ const WhatIsGPT = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

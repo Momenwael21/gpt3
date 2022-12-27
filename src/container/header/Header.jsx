@@ -6,7 +6,6 @@ import user3 from "../../assets/Ellipse 33.png";
 import user4 from "../../assets/Ellipse 34.png";
 import user5 from "../../assets/Ellipse 35.png";
 import user6 from "../../assets/Ellipse 36.png";
-import "./header.css";
 
 const Header = () => {
   return (

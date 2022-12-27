@@ -1,5 +1,4 @@
 import React from "react";
-import "./blogCard.css";
 
 const BlogCard = ({ image, type }) => {
   return (

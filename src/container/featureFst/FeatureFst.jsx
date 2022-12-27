@@ -1,10 +1,9 @@
 import React from "react";
 import Articles from "../../components/Articles/Articles";
-import "./featureFst.css";
 
 const FeatureFst = () => {
   return (
-    <div id="case-Studies" className="features1">
+    <section id="case-Studies" className="features1">
       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-4">
@@ -46,7 +45,7 @@ const FeatureFst = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

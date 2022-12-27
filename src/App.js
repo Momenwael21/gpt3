@@ -1,6 +1,8 @@
-import "./App.css";
+import { Companies, CTA, NavBar } from "./components/index";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../node_modules/bootstrap/dist/js/bootstrap.bundle.min";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
+import "./App.css";
+// import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import {
   Blog,
   FeatureFst,
@@ -9,8 +11,6 @@ import {
   Header,
   WhatIsGPT,
 } from "./container/index";
-
-import { Companies, CTA, NavBar } from "./components/index";
 
 function App() {
   return (

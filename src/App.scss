@@ -10,3 +10,13 @@
 .container {
   overflow: hidden;
 }
+
+// small components
+@import "./components/Articles/articles", "./components/blogCard/blogCard",
+  "./components/companiesLogos/companies", "./components/cta/cta",
+  "./components/nav/navBar";
+
+// main sections
+@import "./container/featureFst/featureFst", "./container/featureSec/featureSec",
+  "./container/footer/footer", "./container/header/header",
+  "./container/whatIsGPT/whatIsGPT", "./container/blog/blog";

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { FiMenu } from "react-icons/fi";
-import "./navBar.css";
 
 export const NavBar = () => {
   const [activeNav, setActiveNav] = useState("notActive");

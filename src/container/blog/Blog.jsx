@@ -1,5 +1,4 @@
 import React from "react";
-import "./blog.css";
 import { BlogCard } from "../../components/index";
 import cardM from "../../assets/card-main.webp";
 import card1 from "../../assets/card1.webp";
@@ -9,7 +8,7 @@ import card4 from "../../assets/card4.webp";
 
 const Blog = () => {
   return (
-    <div id="blog" className="blog">
+    <section id="blog" className="blog">
       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-md-6">
@@ -32,7 +31,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

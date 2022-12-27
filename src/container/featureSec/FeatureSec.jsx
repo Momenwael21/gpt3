@@ -2,11 +2,10 @@ import React from "react";
 import manVR from "../../assets/vr.png";
 import { BsChatLeftText } from "react-icons/bs";
 import { RiMoreFill } from "react-icons/ri";
-import "./featureSec.css";
 
 const FeatureSec = () => {
   return (
-    <div id="openAI" className="features2">
+    <section id="openAI" className="features2">
       <div className="container">
         <div className="row">
           <div className="col-sm-12 col-lg-6">
@@ -41,7 +40,7 @@ const FeatureSec = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
