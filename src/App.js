@@ -2,7 +2,7 @@ import { Companies, CTA, NavBar } from "./components/index";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
 import "./App.css";
-// import "../node_modules/bootstrap/dist/js/bootstrap.bundle";
+
 import {
   Blog,
   FeatureFst,
